@@ -21,10 +21,10 @@ LINES = [
     ("text", "I vibe code, so I use whatever Claude uses."),
     ("text", "Not the lazy kind, though. Lately I'm deep"),
     ("text", "into how real production pipelines work:"),
-    ("item", "Git branches, pull requests, code review"),
-    ("item", "CI/CD with GitHub Actions"),
-    ("item", "Testing, linting and type checks"),
-    ("item", "Deploys, monitoring and rollbacks"),
+    ("item", "Git branches and pull requests"),
+    ("item", "Databases, Supabase auth and OAuth"),
+    ("item", "CD pipeline with Netlify"),
+    ("item", "GitHub Actions that keep this page updated"),
     ("text", "That's about it."),
 ]
 ACCENTS = ["#7c5cff", "#ff7a3d", "#ffa62b", "#00c2a0", "#3d8bff", "#ff4d7d", "#3fbf5f"]
