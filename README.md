@@ -1,6 +1,6 @@
 <div align="center">
 
-<h3>Hi there, I am Prince! 👋</h3>
+<h3>Powered by curiosity, caffeine and claude code.</h3>
 
 <img src="contrib-heatmap.svg" width="860" alt="GitHub contribution heatmap" />
 
