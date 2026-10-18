@@ -10,11 +10,13 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "assets" / "portrait.png"
 OUT = ROOT / "ascii-portrait.svg"
 
-COLS = 64                # characters across
+COLS = 110               # characters across (README shows it at 370px wide regardless)
 CHAR_W = 7.2             # cell width in SVG units (12px monospace)
 CHAR_H = 12              # line height in SVG units
 RAMP = " .`:-=+*cs#%@"   # dark -> bright
 FILL = "#58a6ff"
+ROW_DELAY = 0.08         # seconds between rows starting
+FADE = 1.2               # seconds each row takes to fade in
 STATIC = os.environ.get("STATIC") == "1"  # frozen frame for local previews
 
 
@@ -34,11 +36,11 @@ def to_grid(path):
 def build_svg(lines):
     width = COLS * CHAR_W
     height = len(lines) * CHAR_H
-    style = "" if STATIC else "<style>.r{opacity:0;animation:fadein .4s ease forwards}@keyframes fadein{to{opacity:1}}</style>"
+    style = "" if STATIC else f"<style>.r{{opacity:0;animation:fadein {FADE}s ease forwards}}@keyframes fadein{{to{{opacity:1}}}}</style>"
     rows = []
     for i, line in enumerate(lines):
         cls = "" if STATIC else ' class="r"'
-        delay = "" if STATIC else f' style="animation-delay:{i * 0.03:.2f}s"'
+        delay = "" if STATIC else f' style="animation-delay:{i * ROW_DELAY:.2f}s"'
         rows.append(f'<text x="0" y="{(i + 1) * CHAR_H - 2}"{cls}{delay} xml:space="preserve">{escape(line)}</text>')
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width:g} {height:g}" '
