@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "contributions.json"
 OUT = ROOT / "contrib-heatmap.svg"
 STATIC = os.environ.get("STATIC") == "1"
+STEP_DELAY = 0.06   # seconds between diagonals starting
+FADE = 1.2          # seconds each cell takes to fade in
 
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]  # GitHub levels 0-4
 CELL, GAP = 11, 4
@@ -35,7 +37,7 @@ def main():
         x, y = GRID_X + col * PITCH, GRID_Y + row * PITCH
         color = PALETTE[min(max(d["level"], 0), 4)]
         cls = "" if STATIC else ' class="c"'
-        delay = "" if STATIC else f' style="animation-delay:{(col + row) * 0.02:.2f}s"'
+        delay = "" if STATIC else f' style="animation-delay:{(col + row) * STEP_DELAY:.2f}s"'
         when = date.fromisoformat(d["date"]).strftime("%b %d, %Y")
         cells.append(
             f'<rect{cls}{delay} x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" fill="{color}">'
@@ -43,7 +45,7 @@ def main():
         )
 
     style = "" if STATIC else (
-        "<style>.c{opacity:0;animation:fadein .4s ease forwards}"
+        f"<style>.c{{opacity:0;animation:fadein {FADE}s ease forwards}}"
         "@keyframes fadein{to{opacity:1}}</style>"
     )
 
