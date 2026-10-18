@@ -15,11 +15,11 @@ FONT = "monospace"
 # Edit these lines to change the card.
 TITLE = "mysticalmayfly@github"
 INFO = [
-    ("Now", "MysticalMayfly: one dashboard for my projects"),
-    ("Prev", "Home OS, House BOQ Tracker, World History Atlas"),
-    ("Stack", "Python, JavaScript, HTML/CSS, Claude Code"),
-    ("Projects", "7 local apps, started from one dashboard"),
-    ("Focus", "3D home, browser automation, history maps"),
+    ("Now", "Building MysticalMayfly, my home for projects"),
+    ("Prev", "Home OS, BOQ Tracker, World History Atlas"),
+    ("Stack", "Everything Claude uses: Python, JS, HTML/CSS"),
+    ("Projects", "Built for fun, e.g. GeM Sales Engine, 3D home"),
+    ("Focus", "Vibe coding, but with production pipelines"),
 ]
 # Colours from projects.json, shown as a bar at the bottom.
 PROJECT_COLORS = ["#7c5cff", "#ff7a3d", "#ffa62b", "#00c2a0", "#3d8bff", "#ff4d7d", "#3fbf5f"]
