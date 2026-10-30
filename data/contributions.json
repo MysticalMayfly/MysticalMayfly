@@ -1,6 +1,6 @@
 {
   "user": "MysticalMayfly",
-  "updated": "2026-10-29T13:12:45+00:00",
+  "updated": "2026-10-30T13:05:30+00:00",
   "days": [
     {
       "date": "2025-10-26",
@@ -1780,7 +1780,7 @@
     {
       "date": "2026-10-16",
       "level": 4,
-      "count": 47
+      "count": 46
     },
     {
       "date": "2026-10-17",
@@ -1844,17 +1844,22 @@
     },
     {
       "date": "2026-10-29",
+      "level": 1,
+      "count": 1
+    },
+    {
+      "date": "2026-10-30",
       "level": 0,
       "count": 0
     }
   ],
   "stats": {
     "total": 119,
-    "current_streak": 13,
-    "longest_streak": 13,
+    "current_streak": 14,
+    "longest_streak": 14,
     "best_day": {
       "date": "2026-10-16",
-      "count": 47
+      "count": 46
     }
   }
 }
