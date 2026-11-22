@@ -1,42 +1,7 @@
 {
   "user": "MysticalMayfly",
-  "updated": "2026-11-21T14:44:59+00:00",
+  "updated": "2026-11-22T14:41:10+00:00",
   "days": [
-    {
-      "date": "2025-11-16",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-17",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-18",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-19",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-20",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-21",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-22",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-11-23",
       "level": 0,
@@ -1854,14 +1819,19 @@
     },
     {
       "date": "2026-11-21",
-      "level": 1,
-      "count": 1
+      "level": 3,
+      "count": 6
+    },
+    {
+      "date": "2026-11-22",
+      "level": 3,
+      "count": 7
     }
   ],
   "stats": {
-    "total": 150,
-    "current_streak": 18,
-    "longest_streak": 18,
+    "total": 162,
+    "current_streak": 19,
+    "longest_streak": 19,
     "best_day": {
       "date": "2026-10-16",
       "count": 46
